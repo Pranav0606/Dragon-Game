@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Game</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+    <Header><h1 id="game-name">DRAGON GAME</h1></Header>
+  <section class="startup-menu" id="start-up">
+        <div class="startup">
+            <button class="btn" style="width: 100px;">start</button>
+            <button class="btn" style="width: 200px;"id="how-to-play">How To Play</button>
+         
+            <!-- <button class="btn">Quit</button> -->
+        </div>
+    </section>
+    <section class="game-runner" id="game-runner" >
+        <div class="mainCont"></div>
+        <div class="gameover" id="gameover">
+            <h1>Game Over</h1>
+        </div>
+        <div class="character" id="character"></div>
+        <div id="_scorecont">Your Score : 00</div>
+        <div id="highscore">High Score : 00</div>
+        <div class="enemy animated-enemy" id="enemy"></div>
+    </section>
+    <div id="gameovebackground" style="height: 100vh; width: 100wh; display: none; background: url(/images/bakground.jpg)no-repeat center center/cover ; background-repeat: no-repeat;">
+        <!-- <img src="/images/til-man--AuQJxTAGGE-unsplash.jpg" alt=""> -->
+    </div>
+    <!-- Game Over Section -->
+    <section id="gameover-menu">
+        <div class="container-game-over">
+            <div class="h1">
+                <h1 style="font-size: 5rem;" id="black-game-over">GameOver</h1>
+            </div>
+            <div class="buttons">
+                <button class="btn" id="restart">Restart</button>
+                <button class="btn" id="quit"> Quit</button>
+                <button class="btn" id="gotohome">Go to Home</button>
+            </div>
+        </div>
+    </section>
+    <!-- Rules section -->
+    <section class="rules" id="_rules">
+        <button id="go-back">
+            <img src="/images/goback.png" alt="" />
+        </button>
+        <h1 style="text-align: center; font-size: 2.5rem; color: red;"> How To Play: </h1>
+        <section class="rules-lists">
+          <h1>👉Press <img src="/images/up.png" alt=""> Arrow To Jump </h1>
+          <h1>👉Press <img src="/images/left.png" alt=""> Arrow To Go Back </h1>
+          <h1>👉Press <img src="/images/left.png" alt=""> Arrow To Go Front  </h1>
+          <h1>👉Press <img src="/images/goback.png" alt=""> To Go Back  </h1>
+      </section>
+      </section>
+    <h1 style="font-size: 5.2rem; color: white;" id="white-h1">GameOver</h1>
+</body>
+<script src="/JAVA SCRIPT/script.js"></script>
+
+</html>
